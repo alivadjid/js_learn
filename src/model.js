@@ -23,7 +23,6 @@ import image from './assets/image.png'
 	},
 	{
 		type: 'image',
-		//value: './assets/image.png'
 		value: image
 	}
 ]
