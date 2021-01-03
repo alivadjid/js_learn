@@ -3,7 +3,10 @@ import image from './assets/image.png'
  export const model = [
 	{
 		type: 'title',
-		value: 'Hello World from JS!!!'
+		value: 'Hello World from JS!!!',
+		options: {
+			tag: 'h2'
+		}
 	},
 	{
 		type: 'text',
