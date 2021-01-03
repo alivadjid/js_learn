@@ -7,9 +7,12 @@ export function col(content) {
 }
 
 export function css(styles = {}) {
-	const keys = Object.keys(styles);
-	const array = keys.map(key => {
-		return `${key}: ${styles[key]}`
-	})
-	return array.join(';');
+	// const keys = Object.keys(styles);
+	// const array = keys.map(key => {
+	// 	return `${key}: ${styles[key]}`
+	// })
+	// return array.join(';');
+
+	return Object.keys(styles).map(key => `${key}: ${styles[key]}`).join(';');
+
 }
