@@ -6,17 +6,20 @@ import { row, col, css } from './util';
 	}
 
 	function text(block){
-		return row(col(`${block.value}`));
+		const { styles } = block.options
+		return row(col(`${block.value}`), css(styles));
 	}
 
 	function columns(block){
 	const html = block.value.map(col).join('');
-	return row(html);
+	return row(html, css(block.options.styles));
 }
 
 	function image(block) {
-		return row(`<img src="${block.value}" />`)
+		return row(`<img src="${block.value}" />`, css(block.options.styles))
 }
+
+
 export const templates = {
 	title, // title: title
 	text, // text: text
