@@ -16,7 +16,8 @@ import { row, col, css } from './util';
 }
 
 	function image(block) {
-		return row(`<img src="${block.value}" />`, css(block.options.styles))
+		const { imageStyles: is, alt = '', styles } = block.options
+		return row(`<img src="${block.value}" alt="${alt}" style="${css(is)}"/>`, css(styles))
 }
 
 
