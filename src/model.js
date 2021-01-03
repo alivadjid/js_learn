@@ -19,13 +19,13 @@ const text = `
 		}
 	},
 	{
-		type: 'text',
-		value: text,
+		type: 'image',
+		value: image,
 		options: {
 			styles: {
-				background: 'linear-gradient(to left, #f2994a, #f2c94c)',
-				padding: '1rem',
-				'font-weight':'bolc'
+				padding: '2rem 0',
+				display: 'flex',
+				'justify-content': 'center'
 			}
 		}
 	},
@@ -47,14 +47,15 @@ const text = `
 		}
 	},
 	{
-		type: 'image',
-		value: image,
+		type: 'text',
+		value: text,
 		options: {
 			styles: {
-				padding: '2rem 0',
-				display: 'flex',
-				'justify-content': 'center'
+				background: 'linear-gradient(to left, #f2994a, #f2c94c)',
+				padding: '1rem',
+				'font-weight':'bolc'
 			}
 		}
 	}
+
 ]
