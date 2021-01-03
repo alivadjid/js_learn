@@ -3,9 +3,10 @@ import image from './assets/image.png'
  export const model = [
 	{
 		type: 'title',
-		value: 'Hello World from JS!!!',
+		value: 'Конструктор сайтов на чистом Javascript',
 		options: {
-			tag: 'h2'
+			tag: 'h2',
+			styles: `background: linear-gradient(to right, #ff0099, #493240); color: #fff;`
 		}
 	},
 	{
