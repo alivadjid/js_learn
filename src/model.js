@@ -6,7 +6,13 @@ import image from './assets/image.png'
 		value: 'Конструктор сайтов на чистом Javascript',
 		options: {
 			tag: 'h2',
-			styles: `background: linear-gradient(to right, #ff0099, #493240); color: #fff; text-align: center; padding: 1.5rem;`
+			// styles: `background: linear-gradient(to right, #ff0099, #493240); color: #fff; text-align: center; padding: 1.5rem;`
+			styles: {
+				background: 'linear-gradient(to right, #ff0099, #493240)',
+				color: '#fff',
+				'text-align': 'center',
+				padding: '1.5rem'
+			}
 		}
 	},
 	{
