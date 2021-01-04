@@ -1,12 +1,13 @@
 import image from './assets/image.png' 
-import {Block} from './classes/blocks' 
+//import {Block} from './classes/blocks' 
+import { TitleBlock, TextBlock, ImageBlock, ColumnsBlock } from './classes/blocks'
 
 const text = `
 	Крутые уроки
 `
 
  export const model = [
-	 new Block('title', 'Конструктор сайтов на чистом Javascript', {
+	 new TitleBlock('Конструктор сайтов на чистом Javascript', {
 		tag: 'h2',
 		styles: {
 			background: 'linear-gradient(to right, #ff0099, #493240)',
@@ -15,7 +16,7 @@ const text = `
 			padding: '1.5rem'
 		}
 	 }),
-	 new Block('image', image, {
+	 new ImageBlock(image, {
 		styles: {
 			padding: '2rem 0',
 			display: 'flex',
@@ -27,7 +28,8 @@ const text = `
 		},
 		alt: 'Это картинка'
 	 }),
-	 new Block('columns', ['Приложение на чистом JS, без использования библиотек',
+
+	 new ColumnsBlock(['Приложение на чистом JS, без использования библиотек',
 	 'Узнаешь как работают принципы SOLID и ООП в JS за один курс',
 	 'JS - это просто, интересно. Научись создавать любые UI своими руками',
 	 '4444444'], {
@@ -38,7 +40,7 @@ const text = `
 			'font-weight':'bold'
 		}
 	 }),
-	 new Block('text', text, {
+	 new TextBlock(text, {
 		styles: {
 			background: 'linear-gradient(to left, #f2994a, #f2c94c)',
 			padding: '1rem',
