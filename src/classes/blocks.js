@@ -1,8 +1,7 @@
 import { col, row, css } from '../util'
  
 class Block {
-	constructor(type, value, options) {
-		this.type = type
+	constructor(value, options) {
 		this.value = value
 		this.options = options
 	}
@@ -16,7 +15,7 @@ toHTML(){
 
 export class TitleBlock extends Block {
 	constructor(value, options){
-		super('title', value, options)//вызов конструктора
+		super(value, options)//вызов конструктора
 	}
 
 	toHTML(){
@@ -27,7 +26,7 @@ export class TitleBlock extends Block {
 
 export class ImageBlock extends Block {
 	constructor(value, options){
-		super('image', value, options)//вызов конструктора
+		super(value, options)//вызов конструктора
 	}
 	toHTML(){
 		const { imageStyles: is, alt = '', styles } = this.options
@@ -37,7 +36,7 @@ export class ImageBlock extends Block {
 
 export class ColumnsBlock extends Block {
 	constructor(value, options){
-		super('columns', value, options)//вызов конструктора
+		super(value, options)//вызов конструктора
 	}
 	toHTML(){
 		const html = this.value.map(col).join('');
@@ -46,7 +45,7 @@ export class ColumnsBlock extends Block {
 }
 export class TextBlock extends Block {
 	constructor(value, options){
-		super('text', value, options)//вызов конструктора
+		super(value, options)//вызов конструктора
 	}
 	toHTML(){
 		const { styles } = this.options
