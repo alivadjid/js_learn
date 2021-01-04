@@ -3,14 +3,6 @@ import {model} from './model';
 import './styles/main.css';
 import { Site } from './classes/site'
 import { Sidebar } from './classes/sidebar';
+import { App } from './classes/app';
 
-const site = new Site('#site');
-
-site.render(model)
-
-const updsateCallback = newBlock => {
-	model.push(newBlock)
-	site.render(model)
-}
-
-new Sidebar('#panel', updsateCallback)
+new App(model).init()
