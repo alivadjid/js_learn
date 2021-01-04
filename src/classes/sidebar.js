@@ -37,7 +37,8 @@ export class Sidebar{
 		
 		this.update(newBlock)
 
-		
+		event.target.value.value = ''
+		event.target.styles.value = ''
 	}
 
 }

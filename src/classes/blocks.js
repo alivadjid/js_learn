@@ -46,7 +46,7 @@ export class TextBlock extends Block {
 		super(value, options)//вызов конструктора
 	}
 	toHTML(){
-		const { styles } = this.options
-		return row(col(`${this.value}`), css(styles));
+		//const { styles } = this.options
+		return row(col(`${this.value}`), css(this.options.styles));
 	}
 }
