@@ -32,14 +32,6 @@ export class Sidebar{
 		? new TextBlock(value, { styles})
 		: new TitleBlock(value, { styles })
 
-
-
-		if(type === 'text') {
-			newBlock = new TextBlock(value, { styles })
-		} else {
-			newBlock = new TitleBlock(value, { styles })
-		}
-
 		console.log(newBlock)
 	}
 
